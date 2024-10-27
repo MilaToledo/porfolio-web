@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    padding-top: 60px; 
+    overflow-x: hidden;
+    background-image: url('images/color-fondo.png');
+
+}
+
+.righteous-regular, body {
+    font-family: "Righteous", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #5168c4;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    top: 0;
+    z-index: 1000; 
+    box-sizing: border-box;
+    background-color: #faf4dc;
+    position: fixed;
+    overflow-x: hidden;
+    border-radius: 2px;
+}
+
+.logo img {
+    height: auto;
+    box-shadow: none;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 5px;
+   
+}
+
+
+nav ul li {
+    margin-left: 10px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 12px 11px 49px 11px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 12px 11px 49px 11px rgba(0,0,0,0.42);
+    -moz-box-shadow: 12px 11px 49px 11px rgba(0,0,0,0.42);
+}
+
+
+#inicio {
+    text-align: center; 
+    padding: 20px; 
+    margin: 0 auto; 
+}
+
+#inicio img {
+    margin-top: 30px;
+}
+
