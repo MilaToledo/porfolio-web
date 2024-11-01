@@ -2,15 +2,15 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-    padding-top: 20%; 
+    padding-top: 10%; 
     overflow-x: hidden;
-    background-image: url('.images/color-fondo.png'); 
+    background-image: url('./images/color-fondo.png'); 
 }
 
 .righteous-regular, body {
     font-family: "Righteous", sans-serif;
     font-weight: 200;
-    font-style: normal;
+    font-style: normal;  
     color: #5168c4;
 }
 
@@ -48,17 +48,17 @@ nav ul li a {
     font-size: 3.5vw;
 }
 
-.contenedor, #acerca-de-mi{
+.contenedor, #acerca-de-mi, #inicio, #skills{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
-    margin: 0 auto;
+    padding: 20px;
+    /*margin: 0 auto;*/
 }
 
 img {
     max-width: 100%;
-    height: auto;
+    /*height: auto;*/
     display: block;
     border-radius: 20px;
     box-shadow: 12px 11px 49px 11px rgba(0,0,0,0.42);
@@ -68,12 +68,12 @@ img {
 
 #inicio {
     text-align: center; 
-    padding: 20px; 
+    /*padding: 20px;*/
     margin: 0 auto; 
 }
 
-#inicio img {
-    margin-top: 30px;
+#inicio {
+    margin-top: 20%;
 }
 
 .icon-conteiner {
@@ -175,16 +175,170 @@ footer p:last-of-type {
  .logo img{
     height: 80px;
  }   
- nav ul li a {
+nav ul li a {
     font-size: 15px;
     justify-content: end;
  }
- header{
+header{
     width: 100%;
     align-items: center;
  }
-#inicio img{
-    justify-content: end;
+#inicio{
+    margin-top: 5%;
+ }
+.contenedor .contein-section{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor .contein-section img{
+    width: 200px;
+    max-width: none;    
+}
+.contenedor .contein-section h1,
+.contenedor .contein-section p
+.contenedor .contein-section h2{
+    max-width: 200px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.contenedor .contein-section #acerca-de-mi img{
+    margin-top: 15%;
+}
+.contenedor .contein-section #skills{
+    margin-top: 5%;
+}
+.contenedor .contein-section .icon-conteiner i{
+   width: 43px;
+}
+.contenedor .proyectos-galeria .proyecto-item{
+    max-width: 300px;
+}
+}
+
+
+@media (min-width: 1024px){
+    .contenedor .contein-section img{
+        width: 300px
+    }
+    .contenedor .contein-section #acerca-de-mi img{
+        margin-top: 10%;
+    }
+    #inicio{
+        margin-top: 3.5%;
+     }
+    .contenedor .contein-section #skills{
+        margin-top: 4%;
+    }
+    .contenedor .contein-section h1,
+    .contenedor .contein-section h2{
+        max-width: none;
+        font-size: 30px;
+        
+    }
+    .contenedor .contein-section p{
+        font-size: 20px;
+    }
+    .contenedor .contein-section{
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width: 1440px){
+    .contenedor .contein-section img{
+        width: 400px;
+    }
+    .contenedor .proyectos-galeria img{
+        width: 500px;
+    }
+    .contenedor .proyectos .proyectos-galeria{
+        display: flex;
+        gap: 80px;
+    }
+    .contenedor .formulario{
+        width: 700px;
+    }
+}
+@media (min-width: 1920px){
+    .contenedor .contein-section img{
+        width: 500px;
+    } 
+    .contenedor .contein-section #acerca-de-mi img{
+        margin-top: 4%;
+    }
+    .contenedor .contein-section #acerca-de-mi p{
+        max-width: 700px;
+    }
+    .contenedor .contein-section #skills{
+        margin-top: 2.5%;
+    }
 
 }
+
+@media (min-width: 2560px){
+    .logo img{
+        height: 100px;
+     }   
+    nav ul li a {
+        font-size: 30px;
+        justify-content: end;
+     }
+    #inicio{
+        margin-top: 1%;
+     }
+
+    .contenedor .contein-section img{
+        width: 700px;
+    } 
+    .contenedor .contein-section #acerca-de-mi img{
+        margin-top: 2%;
+    }
+    .contenedor .contein-section #acerca-de-mi p{
+        max-width: 800px;
+    }
+    .contenedor .contein-section #skills{
+        margin-top: 1%;
+    }
+    .contenedor .contein-section h1,
+    .contenedor .contein-section h2{
+        font-weight: 700;
+        max-width: none;
+        font-size: 40px;
+        
+    }
+    .contenedor .contein-section p{
+        font-size: 30px;
+    }
+    .contenedor .contein-section .icon-conteiner {
+        font-size: 100px;
+        gap: 90px
+    }
+    .contenedor .proyectos h2{
+        font-size: 40px;
+    }
+
+    .contenedor .proyectos .proyectos-galeria .proyecto-item{
+        padding-left: 20px;
+        max-width: none;
+        font-size: 30px;
+    }
+    .contenedor #contacto{
+        font-size: 40px
+    }
+    .contenedor label{
+        font-size: 30px;
+    }
+    .contenedor button{
+        font-size: 25px;
+        height: 50px;
+        width: 300px;
+    }
+    .footer-contenido p{
+        font-size: 30px;
+    }
+    .footer-contenido .footer-icons i{
+        height: 50px;
+        font-size: 40px;      
+    }
+    
 }
